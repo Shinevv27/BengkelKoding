@@ -112,10 +112,10 @@ include_once("koneksi.php");
         ?>
             <tr>
                 <th scope="row"><?php echo $no++ ?></th>
-                <td><?php echo $data['nama'] ?></td>
-                <td><?php echo $data['isi'] ?></td>
-                <td><?php echo $data['tgl_awal'] ?></td>
-                <td><?php echo $data['tgl_akhir'] ?></td>
+                <td><?php echo htmlspecialchars($data['nama']) ?></td>
+                <td><?php echo htmlspecialchars($data['isi']) ?></td>
+                <td><?php echo htmlspecialchars($data['tgl_awal']) ?></td>
+                <td><?php echo htmlspecialchars($data['tgl_akhir']) ?></td>
                 <td>
                     <?php
                     if ($data['status'] == '1') {
