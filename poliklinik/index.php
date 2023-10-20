@@ -16,15 +16,6 @@ include_once("koneksi.php");
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
 </head>
 <body>
-
-<!-- Your page content goes here -->
-
-<!-- Include Bootstrap JavaScript and jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-</body>
-</html>
-
 <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
@@ -36,8 +27,8 @@ include_once("koneksi.php");
     aria-controls="navbarNavDropdown" aria-expanded="false"
     aria-label="Toggle navigation">
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="index.php">
             Home
@@ -69,6 +60,9 @@ include_once("koneksi.php");
         </li>
       </ul>
     </div>
+    <div class="form-inline my-2 my-lg-0">
+      <a href="login.php" class="btn btn-light my-2 my-sm-0" type="submit">Login</a>
+    </div>
   </div>
 </nav>
 <main role="main" class="container">
@@ -83,3 +77,11 @@ include_once("koneksi.php");
     }
     ?>
 </main>
+<!-- Your page content goes here -->
+
+<!-- Include Bootstrap JavaScript and jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

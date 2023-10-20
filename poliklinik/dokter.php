@@ -21,8 +21,6 @@ include_once("koneksi.php");
 
 </head>
 <body>
-</body>
-</html>
 <div class="container">
 <hr>    
 
@@ -46,23 +44,25 @@ include_once("koneksi.php");
     <?php
     }
     ?>
+
+     
     <div class="form-group">
         <label for="inputNama" class="form-label fw-bold">
             Nama
         </label>
-        <input type="text" class="form-control" name="nama" id="inputNama" placeholder="Nama" value="<?php echo $nama ?>">
+        <input type="text" class="form-control" name="nama" id="inputNama" placeholder="Nama" value="<?php echo $nama; ?>">
     </div>
     <div class="form-group">
         <label for="inputAlamat" class="form-label fw-bold">
             Alamat
         </label>
-        <input type="text" class="form-control" name="alamat" id="inputAlamat" placeholder="Alamat" value="<?php echo $alamat ?>">
+        <input type="text" class="form-control" name="alamat" id="inputAlamat" placeholder="Alamat" value="<?php echo $alamat; ?>">
     </div>
     <div class="form-group">
         <label for="inputNoHP" class="form-label fw-bold">
             Nomor HP
         </label>
-        <input type="text" class="form-control" name="no_hp" id="inputNoHP" placeholder="Nomor HP" value="<?php echo $no_hp ?>">
+        <input type="text" class="form-control" name="no_hp" id="inputNoHP" placeholder="Nomor HP" value="<?php echo $no_hp; ?>">
     </div>
     <div class="form-group">
         <button type="submit" class="btn btn-primary rounded-pill px-3" name="simpan">Simpan</button>
@@ -140,3 +140,6 @@ if (isset($_GET['aksi'])) {
             </script>";
 }
 ?>
+</body>
+</html>
+
