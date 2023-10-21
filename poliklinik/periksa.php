@@ -50,7 +50,9 @@ include_once("koneksi.php");
     ?>
 
     <div class="form-group mx-sm-3 mb-2">
-        <label for="inputPasien" class="sr-only">Pasien</label>
+        <label for="inputPasien" class="form-label fw-bold">
+            Pasien
+        </label>
         <select class="form-control" name="id_pasien">
             <?php
             $selected = '';
@@ -70,7 +72,9 @@ include_once("koneksi.php");
     </div>
 
     <div class="form-group mx-sm-3 mb-2">
-        <label for="inputDokter" class="sr-only">Dokter</label>
+        <label for="inputDokter" class="form-label fw-bold">
+            Dokter
+        </label>
         <select class="form-control" name="id_dokter">
             <?php
             $selected = '';
