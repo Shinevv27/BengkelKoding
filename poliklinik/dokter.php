@@ -66,7 +66,7 @@ include_once("koneksi.php");
                     <th scope="col">Nama</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">Nomor HP</th>
-                    <th scope="col">Aksinya</th>
+                    <th scope="col">Aksi</th>
                 </tr>
             </thead>
 
