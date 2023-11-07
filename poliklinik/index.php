@@ -39,6 +39,34 @@
                         <a class="nav-link" href="index.php?page=periksa">Periksa</a>
                     </li>
                 </ul>
+                <!-- Add Login and Register buttons here -->
+                <?php
+                    session_start(); // Inisialisasi sesi
+
+                    if (isset($_SESSION['username'])) {
+                        // Jika pengguna sudah login, tampilkan tombol "Logout"
+                    ?>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="Logout.php">Logout</a>
+                            </li>
+                        </ul>
+                    <?php
+                    } else {
+                        // Jika pengguna belum login, tampilkan tombol "Login" dan "Register"
+                    ?>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="RegisterUser.php">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="LoginUser.php">Login</a>
+                            </li>
+                        </ul>
+                    <?php
+                    }
+                    ?>
+
             </div>
         </div>
     </nav>

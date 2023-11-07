@@ -1,5 +1,14 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 include_once("koneksi.php");
+if (!isset($_SESSION['username'])) {
+    header("Location: LoginUser.php");
+    exit;
+}
+// Lanjutkan kode halaman ini jika sudah login
 ?>
 
 <!DOCTYPE html>
